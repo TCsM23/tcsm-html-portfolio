@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions · YJR / TCsM</title>
+    <meta name="description" content="Portfolio of Yves Jerico Repayo (TCsM): student, video editor and aspiring game developer.">
+    <meta name="theme-color" content="#242024">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/init.js"></script>
+</head>
+<body class="page-projects">
+    <div class="scanlines"></div>
+    <div class="starfield"></div>
+    <div class="bg-animated-box" aria-hidden="true">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="container">
+        <header class="main-site-header">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/logo.png" alt="TCsM logo"></a>
+                <h1><a href="index.html">TCsM</a></h1>
+            </div>
+
+            <button class="header-nav-toggle" id="navToggle" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="header-nav" id="headerNav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Log</a></li>
+                    <li><a href="projects.html" class="nav-link active" aria-current="page">Missions</a></li>
+                    <li><a href="about.html" class="nav-link">Loadout</a></li>
+                    <li><a href="contact.html" class="nav-link">Transmit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-page-hero-banner">
+                <div class="main-page-hero-frame"><p>Missions Log</p></div>
+            </div>
+
+            <div class="main-section-header gold"><span class="main-section-header-id">01</span><h2>Mission Log</h2><span class="main-section-header-rule"></span></div>
+            <div class="main-missions-filter" role="group" aria-label="Filter missions by category">
+                <button type="button" class="main-missions-filter-btn active" data-filter="all">All</button>
+                <button type="button" class="main-missions-filter-btn" data-filter="game-dev">Game Dev</button>
+                <button type="button" class="main-missions-filter-btn" data-filter="data">Data</button>
+                <button type="button" class="main-missions-filter-btn" data-filter="systems">Systems</button>
+                <button type="button" class="main-missions-filter-btn" data-filter="networking">Networking</button>
+                <button type="button" class="main-missions-filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <div class="main-missions-grid" id="missionsGrid">
+                <a href="#mission-01" class="main-missions-card" data-category="web">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 01</span>
+                        <span class="main-missions-card-cat">Web</span>
+                    </div>
+                    <h3>TCsMusic</h3>
+                    <p>A piano assistant and music-theory learning site.</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PythonAnywhere</span>
+                    </div>
+                </a>
+                <a href="#mission-02" class="main-missions-card" data-category="web">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 02</span>
+                        <span class="main-missions-card-cat">Web</span>
+                    </div>
+                    <h3>TCsMetroid</h3>
+                    <p>A Metroidvania route planner and randomizer built on graphs.</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Graphs / DSA</span>
+                        <span>Render</span>
+                    </div>
+                </a>
+                <a href="#mission-03" class="main-missions-card" data-category="systems">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 03</span>
+                        <span class="main-missions-card-cat">Systems</span>
+                    </div>
+                    <h3>TCsMovement</h3>
+                    <p>An exercise planner for building routines and logging workouts, built with Django.</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Render</span>
+                    </div>
+                </a>
+                <a href="#mission-04" class="main-missions-card" data-category="networking">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 04</span>
+                        <span class="main-missions-card-cat">Networking</span>
+                    </div>
+                    <h3>Network Infrastructure of a High School</h3>
+                    <p>Connecting routers, switches, and end devices, and making FTPs, HTTPs, and DNS</p>
+                    <div class="main-missions-card-stack">
+                        <span>Cisco Packet Tracer</span>
+                        <span>Networking</span>
+                    </div>
+                </a>
+                <a href="#mission-05" class="main-missions-card" data-category="game-dev">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 05</span>
+                        <span class="main-missions-card-cat">Game Dev</span>
+                    </div>
+                    <h3>Flappy Bird - Pygame</h3>
+                    <p>A cloned Flappy Bird game using Pygame</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                </a>
+                <a href="#mission-06" class="main-missions-card" data-category="systems">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 06</span>
+                        <span class="main-missions-card-cat">Systems</span>
+                    </div>
+                    <h3>XOR Neural Network</h3>
+                    <p>XOR implemented with raw NumPy, no frameworks.</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                    </div>
+                </a>
+                <a href="#mission-07" class="main-missions-card" data-category="game-dev">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 07</span>
+                        <span class="main-missions-card-cat">Game Dev</span>
+                    </div>
+                    <h3>Pong - Pygame</h3>
+                    <p>A cloned Pong game using Pygame</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                </a>
+                <a href="#mission-08" class="main-missions-card" data-category="game-dev">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 08</span>
+                        <span class="main-missions-card-cat">Game Dev</span>
+                    </div>
+                    <h3>Snake - Pygame</h3>
+                    <p>A cloned Snake game using Pygame</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                </a>
+                <a href="#mission-09" class="main-missions-card" data-category="game-dev">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 09</span>
+                        <span class="main-missions-card-cat">Game Dev</span>
+                    </div>
+                    <h3>Spaceship - Pygame</h3>
+                    <p>An inspired Spaceship game of GALAGA from the original ATARI using Pygame</p>
+                    <div class="main-missions-card-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                </a>
+                <a href="#mission-10" class="main-missions-card" data-category="data">
+                    <div class="main-missions-card-top">
+                        <span class="main-missions-card-id">DESIGNATION 10</span>
+                        <span class="main-missions-card-cat">Data</span>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p>A Student Management System using TKinter, MySQL, and Python.</p>
+                    <div class="main-missions-card-stack">
+                        <span>MySQL</span>
+                        <span>Python</span>
+                        <span>TKinter</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="mission-01" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Web</span>
+                    <h2>TCsMusic</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/tcsmusic.png" alt="TCsMusic homepage screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Oct 2026</p>
+                    <p>When I first conceptualized this, I thought I was going to only make it for myself, I wanted a piano guider to help me play and learn faster, so I created a system for it. It was
+			originally a chord guide for me to understand where the chords placer are, a scale and progression guide for me to memorize it. But as I go along creating this project. I thought that I should expand it,
+   make it more available to other struggling self-taught players like me. So I improved on it, referenced other systems such as FL Studio. Now this is the current version of my TCsMusic</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PythonAnywhere</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://tcsm.pythonanywhere.com" target="_blank" rel="noopener">Live Site</a>
+                        <a href="https://github.com/TCsM23/CreatingPianoAssistant.git" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-02" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Web</span>
+                    <h2>TCsMetroid</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/tcsmetroid.png" alt="TCsMetroid route planner screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Oct 2026</p>
+                    <p>I created this because I am planning to make a Metroidvania game, but I stuggle on how the map layout should look like, so I thought of an idea that I should
+			make a system for it. A system that will help me to create map templates for matroidvanias. This will not only help me, but other metroidvania game developers.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Graphs / DSA</span>
+                        <span>Render</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://tcsmetroid.onrender.com" target="_blank" rel="noopener">Live App</a>
+                        <a href="https://github.com/TCsM23/YOUR-REPO" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-03" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Systems</span>
+                    <h2>TCsMovement</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/tcsmovement.png" alt="TCsMovement screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Oct 17, 2026</p>
+                    <p>An exercise planner I designed and built with Django. You can create your own exercises and put them into routines with a warm-up, a workout, and a cool-down, including stretching routines. It has user accounts and a database, and is deployed on Render.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Render</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://tcsmovement.onrender.com" target="_blank" rel="noopener">Live Site</a>
+                        <a href="https://github.com/TCsM23/TCsMovement" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-04" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Networking</span>
+                    <h2>Network Infrastructure of a High School</h2>
+                    <div class="main-missions-modal-media">
+                        <iframe src="https://www.youtube-nocookie.com/embed/jhulM61cWGE" title="Reviewing a Network Infrastructure for a High School | Cisco Packet Tracer" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <p class="main-missions-modal-date">Apr 28, 2026</p>
+                    <p>I created a Network Infrastructure of my High School. I used Cisco Packet Tracer for it, I designed the network with 1 main router, and 4 helper routers, I divided the school&#039;s infrastructure by categorization, I took all public areas and created pools for the public, I took all the internal areas and created pools for the internal part of the school, the ComLabs have their own pools as well. I added FTP, HTTP, and DNS to it to showcase how the network actually flows in packet tracer.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Cisco Packet Tracer</span>
+                        <span>Networking</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://www.youtube.com/watch?v=jhulM61cWGE" target="_blank" rel="noopener">YT Link</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-05" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Game Dev</span>
+                    <h2>Flappy Bird - Pygame</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/flappy-bird.png" alt="Flappy Bird clone screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jun 26, 2026</p>
+                    <p>Using Python and the Pygame Library. I cloned the Flappy Bird game, by using some assets from the internet and watched tutorial on how to use the pygame library, I thought of my own way on how to make the gravity and the movement of the pipes, it was hard but eventually, I got the gist of it.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/CreatingFlappyBirdFinal" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-06" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Systems</span>
+                    <h2>XOR Neural Network</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/XOR.png" alt="XOR Neural Network output" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jul 02, 2026</p>
+                    <p>Probably the hardest thing to learn, never touch ML without having a significant background and knowledge on coding.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/XOR-Simple-Neural" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-07" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Game Dev</span>
+                    <h2>Pong - Pygame</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/pong.png" alt="Pong clone screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jun 26, 2026</p>
+                    <p>Same thing with the Flappy Bird game, this was the first game I coded from scratch using pygame, discovering timers, and events.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/CreatingPong" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-08" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Game Dev</span>
+                    <h2>Snake - Pygame</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/snake.png" alt="Snake clone screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jun 12, 2026</p>
+                    <p>The first thing I coded in Summer of 2026, I wanted to learn how to make a snake game, but this was tutorial-based. I was introduced to pygame and the more I used it the more I wanted to make more games.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/CreatingSnakeWithPygame" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-09" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Game Dev</span>
+                    <h2>Spaceship - Pygame</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/spaceship.png" alt="Spaceship game screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jun 15, 2026</p>
+                    <p>The second tutorial-based pygame game I created, it was the first time I was introduced to events in pygame. Making this was the first time I discovered how to use display surfaces.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>Python</span>
+                        <span>pygame-ce</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/CreatingSpaceshipGame" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mission-10" class="main-missions-modal">
+                <div class="main-missions-modal-content">
+                    <a href="#missions-closed" class="main-missions-modal-close" aria-label="Close">&times;</a>
+                    <span class="main-missions-modal-cat">Data</span>
+                    <h2>Student Management System</h2>
+                    <div class="main-missions-modal-media">
+                        <img src="images/projects-info/student-management.png" alt="Student Management System screenshot" loading="lazy">
+                    </div>
+                    <p class="main-missions-modal-date">Jun 24, 2026</p>
+                    <p>This is a Student Grade Management System that I created, because I was inspired by the first-years that I paneled and graded. I wanted to create something of my own, and utilize my knowledge in MySQL and Python.</p>
+                    <div class="main-missions-modal-stack">
+                        <span>MySQL</span>
+                        <span>Python</span>
+                        <span>TKinter</span>
+                    </div>
+                    <div class="main-missions-modal-links">
+                        <a href="https://github.com/TCsM23/Student-Grade-Management-System" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <nav class="footer-nav" aria-label="Footer">
+                        <a href="index.html">Log</a>
+                        <a href="projects.html">Missions</a>
+                        <a href="about.html">Loadout</a>
+                        <a href="contact.html">Transmit</a>
+                    </nav>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/yvesjerico.repayo" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                        <a href="https://github.com/TCsM23" aria-label="GitHub" target="_blank" rel="noopener">GH</a>
+                        <a href="https://www.youtube.com/@tcsm0023" aria-label="YouTube" target="_blank" rel="noopener">YT</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 YJR / TCsM — Transmission Log</p>
+                    <p class="footer-tag">-- END OF FILE</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

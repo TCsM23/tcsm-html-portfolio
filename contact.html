@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmit · YJR / TCsM</title>
+    <meta name="description" content="Portfolio of Yves Jerico Repayo (TCsM): student, video editor and aspiring game developer.">
+    <meta name="theme-color" content="#242024">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/init.js"></script>
+</head>
+<body class="page-contact">
+    <div class="scanlines"></div>
+    <div class="starfield"></div>
+    <div class="bg-animated-box" aria-hidden="true">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="container">
+        <header class="main-site-header">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/logo.png" alt="TCsM logo"></a>
+                <h1><a href="index.html">TCsM</a></h1>
+            </div>
+
+            <button class="header-nav-toggle" id="navToggle" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="header-nav" id="headerNav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Log</a></li>
+                    <li><a href="projects.html" class="nav-link">Missions</a></li>
+                    <li><a href="about.html" class="nav-link">Loadout</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Transmit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-page-hero-banner">
+                <div class="main-page-hero-frame"><p>Transmit Your Message</p></div>
+            </div>
+
+            <div class="main-transmit-container">
+                <div class="main-section-header blue"><span class="main-section-header-id">01</span><h2>Open Transmission</h2><span class="main-section-header-rule"></span></div>
+                <div class="main-transmit-flex">
+                    <div class="main-transmit-picture">
+                        <img src="images/yjr.png" alt="Yves Jerico Repayo">
+                    </div>
+
+                    <form class="main-transmit-form" action="contact.html" method="get" id="transmitForm"
+                          data-emailjs-key="aI14LXH9_lJrPbSQ5"
+                          data-emailjs-service="service_j9t3wna"
+                          data-emailjs-template="template_q4x6tth" novalidate>
+                        
+                        <!-- honeypot: real visitors never see or fill this -->
+                        <div class="main-transmit-trap" aria-hidden="true">
+                            <label for="website">Leave this empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="main-transmit-input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" maxlength="100" value="" required>
+                        </div>
+                        <div class="main-transmit-input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="150" value="" required>
+                        </div>
+                        <div class="main-transmit-input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Transmit your message..." maxlength="3000" required></textarea>
+                        </div>
+                        <button type="submit" class="main-transmit-submit-btn" id="transmitSubmitBtn">Send Transmission</button>
+                        <p class="main-transmit-status" id="transmitStatus" role="status"></p>
+                    </form>
+
+                    <div class="main-transmit-info">
+                        <h3>Direct Channels</h3>
+                        <p><a href="mailto:yvesjericorepayo@gmail.com">yvesjericorepayo@gmail.com</a></p>
+                        <p><a href="https://facebook.com/yvesjerico.repayo" target="_blank" rel="noopener">facebook.com/yvesjerico.repayo</a></p>
+                        <p><a href="https://github.com/TCsM23" target="_blank" rel="noopener">github.com/TCsM23</a></p>
+                        <p><a href="https://www.youtube.com/@tcsm0023" target="_blank" rel="noopener">youtube.com/@tcsm0023</a></p>
+                        <p><a href="https://linkedin.com/in/yves-jerico-repayo-72a593444/" target="_blank" rel="noopener">linkedin.com/in/yves-jerico-repayo-72a593444/</a></p>
+                    
+                        <a href="files/resume_yves_jerico_repayo.pdf" class="main-transmit-info-resume-btn" download>
+                            Download Resume (PDF)                        </a>
+                    </div>
+                </div>
+            </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <nav class="footer-nav" aria-label="Footer">
+                        <a href="index.html">Log</a>
+                        <a href="projects.html">Missions</a>
+                        <a href="about.html">Loadout</a>
+                        <a href="contact.html">Transmit</a>
+                    </nav>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/yvesjerico.repayo" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                        <a href="https://github.com/TCsM23" aria-label="GitHub" target="_blank" rel="noopener">GH</a>
+                        <a href="https://www.youtube.com/@tcsm0023" aria-label="YouTube" target="_blank" rel="noopener">YT</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 YJR / TCsM — Transmission Log</p>
+                    <p class="footer-tag">-- END OF FILE</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
