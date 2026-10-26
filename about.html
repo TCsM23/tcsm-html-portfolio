@@ -80,33 +80,41 @@
             <div class="main-section-header gold"><span class="main-section-header-id">04</span><h2>Upgrades Unlocked</h2><span class="main-section-header-rule"></span></div>            <div class="main-about-upgrades-carousel">
                 <button type="button" class="main-about-upgrades-arrow left" aria-label="Scroll left">&#10094;</button>
                 <div class="main-about-upgrades-track" id="upgradesTrack" tabindex="0">
-                    <div class="main-about-upgrade-card">
+                    <div class="main-about-upgrade-card" role="button" tabindex="0" aria-label="View Networking Basics certificate larger">
                         <div class="main-about-upgrade-img"><img src="images/certficates/networking-cert.png" alt="Networking Basics certificate" loading="lazy"></div>
                         <h3>Networking Basics</h3>
                         <p>Cisco Networking Academy</p>
                     </div>
-                    <div class="main-about-upgrade-card">
+                    <div class="main-about-upgrade-card" role="button" tabindex="0" aria-label="View Networking Devices and Basic Configuration certificate larger">
                         <div class="main-about-upgrade-img"><img src="images/certficates/netbascon.png" alt="Networking Devices and Basic Configuration certificate" loading="lazy"></div>
                         <h3>Networking Devices and Basic Configuration</h3>
                         <p>Cisco Networking Academy</p>
                     </div>
-                    <div class="main-about-upgrade-card">
+                    <div class="main-about-upgrade-card" role="button" tabindex="0" aria-label="View Journey into SQL with Taylor Swift certificate larger">
                         <div class="main-about-upgrade-img"><img src="images/certficates/sqlcodesig.png" alt="Journey into SQL with Taylor Swift certificate" loading="lazy"></div>
                         <h3>Journey into SQL with Taylor Swift</h3>
                         <p>CodeSignal</p>
                     </div>
-                    <div class="main-about-upgrade-card">
+                    <div class="main-about-upgrade-card" role="button" tabindex="0" aria-label="View Intro to Data Analysis with Python certificate larger">
                         <div class="main-about-upgrade-img"><img src="images/certficates/dataanalysiscert.png" alt="Intro to Data Analysis with Python certificate" loading="lazy"></div>
                         <h3>Intro to Data Analysis with Python</h3>
                         <p>CodeSignal</p>
                     </div>
-                    <div class="main-about-upgrade-card">
+                    <div class="main-about-upgrade-card" role="button" tabindex="0" aria-label="View Introduction to SQL certificate larger">
                         <div class="main-about-upgrade-img"><img src="images/certficates/sqlsimplilearn.png" alt="Introduction to SQL certificate" loading="lazy"></div>
                         <h3>Introduction to SQL</h3>
                         <p>Simplilearn</p>
                     </div>
                 </div>
                 <button type="button" class="main-about-upgrades-arrow right" aria-label="Scroll right">&#10095;</button>
+            </div>
+
+            <div class="main-about-upgrade-lightbox" id="upgradeLightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+                <div class="main-about-upgrade-lightbox-content">
+                    <button type="button" class="main-about-upgrade-lightbox-close" aria-label="Close">&times;</button>
+                    <img class="main-about-upgrade-lightbox-img" src="" alt="">
+                    <p class="main-about-upgrade-lightbox-caption"></p>
+                </div>
             </div>
 
             <div class="main-section-header blue"><span class="main-section-header-id">05</span><h2>Intel Briefings</h2><span class="main-section-header-rule"></span></div>            <div class="main-about-briefings-list">
